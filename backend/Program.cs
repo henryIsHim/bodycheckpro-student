@@ -27,8 +27,8 @@ builder.Services.AddCors(options => {
         }
         else
         {
-            // Production domains - Railway deployment
-            policy.WithOrigins("https://bodycheckpro-student-mvc.up.railway.app", "https://*.up.railway.app")
+            // Production domains - Railway backend, Render frontend
+            policy.WithOrigins("https://bodycheckpro-student.onrender.com", "https://*.onrender.com", "https://*.up.railway.app")
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         }
