@@ -3,7 +3,12 @@
 A comprehensive student body check tracking application built with ASP.NET Core 9.0, featuring a separate Web API backend and MVC frontend for managing student physical measurements.
 
 ## 🚀 Live Demo
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20App-blue?style=for-the-badge&logo=railway)](https://bodycheck-student-tracker-production.up.railway.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20App-blue?style=for-the-badge&logo=render)](https://bodycheckpro-student.onrender.com)
+
+### 🔗 Service URLs
+- **Frontend (MVC)**: https://bodycheckpro-student.onrender.com
+- **Backend (API)**: https://bodycheckpro-student-webapi.up.railway.app
+- **API Endpoint**: https://bodycheckpro-student-webapi.up.railway.app/api/BodyCheck
 
 ## Project Architecture
 
@@ -119,18 +124,32 @@ bodycheck-student-tracker/
 
 ## Deployment
 
-### Railway
-Both applications are configured for Railway deployment:
+### Current Architecture
+- **Backend**: Deployed on Railway (https://bodycheckpro-student-webapi.up.railway.app)
+- **Frontend**: Deployed on Render (https://bodycheckpro-student.onrender.com)
+- **Database**: SQLite with automatic creation in both environments
+- **CORS**: Configured for cross-origin communication between services
+
+### Railway (Backend)
 - Docker containerization via `Dockerfile`
 - Railway configuration in `railway.json`
 - Production environment variables
 - Automatic restart policies
+- Auto-deployment on GitHub push
+
+### Render (Frontend)
+- Docker-based deployment
+- Automatic builds from GitHub
+- Free tier hosting
+- Auto-deployment on GitHub push
+- Root directory configured for frontend folder
 
 ### Docker
-Each application includes:
+Both applications include:
 - Multi-stage Docker builds
 - Production-optimized images
 - Environment-specific configurations
+- SQLite database initialization
 
 ## File Structure
 
