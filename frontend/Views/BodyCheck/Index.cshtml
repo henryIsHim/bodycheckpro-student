@@ -1,0 +1,157 @@
+@model IEnumerable<BodyCheckMVCWebAPIClient.Models.BodyCheckViewModel>
+@using System.Reflection
+@using System.ComponentModel
+@{
+    ViewData["Title"] = "Body Check Records";
+}
+
+<!-- Page Header -->
+<div class="page-header">
+    <div class="d-md-flex justify-content-between align-items-center">
+        <div class="text-center text-md-start mb-3 mb-md-0">
+            <h1 class="page-title">📋 Body Check Records</h1>
+            <p class="page-subtitle">Manage student health and fitness data</p>
+        </div>
+        <div class="d-none d-md-block">
+            <a asp-controller="BodyCheck" asp-action="Create" class="btn btn-modern btn-primary-modern">
+                <i class="fas fa-plus"></i>
+                Add New Record
+            </a>
+        </div>
+    </div>
+    <!-- Mobile button -->
+    <div class="d-md-none text-center mt-3">
+        <a asp-controller="BodyCheck" asp-action="Create" class="btn btn-modern btn-primary-modern px-4 py-2">
+            <i class="fas fa-plus"></i>
+            Add New Record
+        </a>
+    </div>
+</div>
+
+<!-- Records Table -->
+@if (Model != null && Model.Any())
+{
+    <div class="modern-table-container">
+        <table class="table modern-table">
+            <thead>
+                <tr>
+                    @foreach (var property in typeof(BodyCheckMVCWebAPIClient.Models.BodyCheckViewModel).GetProperties())
+                    {
+                        <th>
+                            @(property.GetCustomAttributes(typeof(DisplayNameAttribute), false)
+                                        .Cast<DisplayNameAttribute>()
+                                        .FirstOrDefault()?.DisplayName ?? property.Name)
+                        </th>
+                    }
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var bodyCheck in Model)
+                {
+                    <tr>
+                        <td><strong>#@bodyCheck.Id</strong></td>
+                        <td>
+                            @if (string.IsNullOrEmpty(bodyCheck.StudentId) || bodyCheck.StudentId == "-")
+                            {
+                                <span class="text-muted">Not assigned</span>
+                            }
+                            else
+                            {
+                                @bodyCheck.StudentId
+                            }
+                        </td>
+                        <td>@bodyCheck.Firstname</td>
+                        <td>@bodyCheck.Lastname</td>
+                        <td>
+                            <span class="badge bg-info">@bodyCheck.HeightCm cm</span>
+                        </td>
+                        <td>
+                            <span class="badge bg-success">@bodyCheck.WeightKg kg</span>
+                        </td>
+                        <td>
+                            <div class="action-buttons">
+                                <a asp-controller="BodyCheck" asp-action="Edit" asp-route-id="@bodyCheck.Id"
+                                   class="btn btn-modern btn-edit" title="Edit Record">
+                                    <i class="fas fa-edit"></i>
+                                    Edit
+                                </a>
+                                <a asp-controller="BodyCheck" asp-action="Delete" asp-route-id="@bodyCheck.Id"
+                                   class="btn btn-modern btn-delete" title="Delete Record">
+                                    <i class="fas fa-trash"></i>
+                                    Delete
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- Records Summary -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4 class="card-title">@Model.Count()</h4>
+                            <p class="card-text">Total Records</p>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="fas fa-users fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4 class="card-title">@Model.Where(x => x.HeightCm > 0).Average(x => x.HeightCm).ToString("F1") cm</h4>
+                            <p class="card-text">Average Height</p>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="fas fa-ruler-vertical fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-info text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4 class="card-title">@Model.Where(x => x.WeightKg > 0).Average(x => x.WeightKg).ToString("F1") kg</h4>
+                            <p class="card-text">Average Weight</p>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="fas fa-weight fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <!-- Empty State -->
+    <div class="modern-table-container">
+        <div class="empty-state">
+            <div class="empty-state-icon">
+                <i class="fas fa-clipboard-list"></i>
+            </div>
+            <h3>No Body Check Records Found</h3>
+            <p>Start by adding your first body check record to track student health data.</p>
+            <a asp-controller="BodyCheck" asp-action="Create" class="btn btn-modern btn-primary-modern mt-3">
+                <i class="fas fa-plus"></i>
+                Add First Record
+            </a>
+        </div>
+    </div>
+}

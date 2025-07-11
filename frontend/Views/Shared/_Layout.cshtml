@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BodyCheckMVCWebAPIClient</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BodyCheckMVC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg modern-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand modern-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="fas fa-heartbeat brand-icon"></i>
+                    <span class="brand-text">BodyCheck Pro</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link modern-nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="fas fa-home"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link modern-nav-link" asp-area="" asp-controller="BodyCheck" asp-action="Index">
+                                <i class="fas fa-clipboard-list"></i>
+                                Records
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link modern-nav-link" asp-area="" asp-controller="BodyCheck" asp-action="Create">
+                                <i class="fas fa-plus-circle"></i>
+                                Add Record
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle modern-nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                                <i class="fas fa-cog"></i>
+                                Settings
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end modern-dropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                    <i class="fas fa-shield-alt"></i> Privacy
+                                </a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">
+                                    <i class="fas fa-question-circle"></i> Help
+                                </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container main-content">
+        <main role="main" class="pb-3">
+            @{
+                var errorMessage = TempData["errorMessage"]?.ToString();
+                var successMessage = TempData["successMessage"]?.ToString();
+            }
+            @if (!string.IsNullOrWhiteSpace(@successMessage))
+            {
+                <div class="alert alert-success">
+                    <b>Success: </b>@successMessage
+                    <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            else if (!string.IsNullOrWhiteSpace(errorMessage))
+            {
+                <div class="alert alert-danger">
+                    <b>Error: </b>@errorMessage
+                    <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-brand">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>BodyCheck Pro</span>
+                    </div>
+                    <p class="footer-text">Health and fitness tracking made simple</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-links">
+                        <a asp-area="" asp-controller="Home" asp-action="Privacy" class="footer-link">
+                            <i class="fas fa-shield-alt"></i> Privacy Policy
+                        </a>
+                        <a href="#" class="footer-link">
+                            <i class="fas fa-question-circle"></i> Help & Support
+                        </a>
+                    </div>
+                    <p class="footer-copyright">
+                        &copy; @DateTime.Now.Year BodyCheck Pro. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/custom.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

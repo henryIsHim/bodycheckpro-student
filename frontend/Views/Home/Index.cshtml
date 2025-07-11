@@ -1,0 +1,227 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<!-- Dashboard Header -->
+<div class="dashboard-header">
+    <div class="row align-items-center">
+        <div class="col-md-8">
+            <h1 class="dashboard-title">
+                <i class="fas fa-chart-line"></i>
+                Welcome to BodyCheck Pro
+            </h1>
+            <p class="dashboard-subtitle">
+                Your comprehensive health and fitness tracking dashboard
+            </p>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <a asp-controller="BodyCheck" asp-action="Create" class="btn btn-light btn-lg">
+                <i class="fas fa-plus-circle"></i>
+                Add New Record
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Statistics Cards -->
+<div class="row">
+    <div class="col-lg-3 col-md-6">
+        <div class="stats-card primary">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="stats-number" id="totalRecords">0</div>
+                    <div class="stats-label">Total Records</div>
+                </div>
+                <div class="stats-icon text-primary">
+                    <i class="fas fa-users"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="stats-card success">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="stats-number" id="avgHeight">0.0 cm</div>
+                    <div class="stats-label">Average Height</div>
+                </div>
+                <div class="stats-icon text-success">
+                    <i class="fas fa-ruler-vertical"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="stats-card warning">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="stats-number" id="avgWeight">0.0 kg</div>
+                    <div class="stats-label">Average Weight</div>
+                </div>
+                <div class="stats-icon text-warning">
+                    <i class="fas fa-weight"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="row">
+    <!-- Quick Actions -->
+    <div class="col-lg-4">
+        <div class="quick-actions">
+            <h5 class="mb-3">
+                <i class="fas fa-bolt text-warning"></i>
+                Quick Actions
+            </h5>
+            
+            <a asp-controller="BodyCheck" asp-action="Create" class="quick-action-btn">
+                <div class="quick-action-icon primary">
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div>
+                    <div class="fw-bold">Add New Record</div>
+                    <small class="text-muted">Create a new body check entry</small>
+                </div>
+            </a>
+            
+            <a asp-controller="BodyCheck" asp-action="Index" class="quick-action-btn">
+                <div class="quick-action-icon success">
+                    <i class="fas fa-list"></i>
+                </div>
+                <div>
+                    <div class="fw-bold">View All Records</div>
+                    <small class="text-muted">Browse and manage existing records</small>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+    
+    <!-- Recent Activity -->
+    <div class="col-lg-8">
+        <div class="quick-actions">
+            <h5 class="mb-3">
+                <i class="fas fa-clock text-primary"></i>
+                Recent Activity
+            </h5>
+            
+            <div id="recentActivity">
+                <div class="text-center text-muted py-4">
+                    <i class="fas fa-spinner fa-spin fa-2x mb-3"></i>
+                    <p>Loading recent activity...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Health Tips Section -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="quick-actions">
+            <h5 class="mb-3">
+                <i class="fas fa-lightbulb text-warning"></i>
+                Health & Fitness Tips
+            </h5>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center p-3">
+                        <i class="fas fa-apple-alt fa-3x text-success mb-3"></i>
+                        <h6>Balanced Nutrition</h6>
+                        <p class="text-muted small">Maintain a balanced diet with proper portions of proteins, carbs, and vegetables.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-3">
+                        <i class="fas fa-running fa-3x text-primary mb-3"></i>
+                        <h6>Regular Exercise</h6>
+                        <p class="text-muted small">Aim for at least 150 minutes of moderate aerobic activity per week.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-3">
+                        <i class="fas fa-bed fa-3x text-info mb-3"></i>
+                        <h6>Quality Sleep</h6>
+                        <p class="text-muted small">Get 7-9 hours of quality sleep each night for optimal health and recovery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Load dashboard statistics
+        async function loadDashboardStats() {
+            try {
+                const response = await fetch('/BodyCheck');
+                if (response.ok) {
+                    const html = await response.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    
+                    // Extract statistics from the records page
+                    const cards = doc.querySelectorAll('.card-title');
+                    if (cards.length >= 3) {
+                        document.getElementById('totalRecords').textContent = cards[0].textContent;
+                        document.getElementById('avgHeight').textContent = cards[1].textContent;
+                        document.getElementById('avgWeight').textContent = cards[2].textContent;
+                    }
+                } else {
+                    console.error('Failed to load statistics');
+                }
+            } catch (error) {
+                console.error('Error loading dashboard stats:', error);
+                // Set default values
+                document.getElementById('totalRecords').textContent = '0';
+                document.getElementById('avgHeight').textContent = '0.0 cm';
+                document.getElementById('avgWeight').textContent = '0.0 kg';
+            }
+        }
+        
+        // Load recent activity
+        function loadRecentActivity() {
+            const recentActivity = document.getElementById('recentActivity');
+            recentActivity.innerHTML = `
+                <div class="d-flex align-items-center p-3 border-bottom">
+                    <div class="me-3">
+                        <i class="fas fa-plus-circle text-success"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-bold">New record created</div>
+                        <small class="text-muted">Check the records page for the latest entries</small>
+                    </div>
+                    <small class="text-muted">Just now</small>
+                </div>
+                <div class="d-flex align-items-center p-3 border-bottom">
+                    <div class="me-3">
+                        <i class="fas fa-chart-line text-primary"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="fw-bold">Dashboard accessed</div>
+                        <small class="text-muted">Welcome to your health tracking dashboard</small>
+                    </div>
+                    <small class="text-muted">Now</small>
+                </div>
+                <div class="text-center py-3">
+                    <a href="/BodyCheck" class="btn btn-outline-primary btn-sm">
+                        View All Records
+                    </a>
+                </div>
+            `;
+        }
+        
+        
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            loadDashboardStats();
+            loadRecentActivity();
+        });
+        
+        // Auto-refresh stats every 30 seconds
+        setInterval(loadDashboardStats, 30000);
+    </script>
+}

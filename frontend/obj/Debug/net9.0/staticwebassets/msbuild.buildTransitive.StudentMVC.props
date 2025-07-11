@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BodyCheckMVCWebAPIClient.props" />
+</Project>

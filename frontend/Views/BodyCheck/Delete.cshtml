@@ -1,0 +1,38 @@
+@model BodyCheckMVCWebAPIClient.Models.BodyCheckViewModel
+@{
+    ViewData["Title"] = "Delete Body Check Record";
+}
+<h1>Delete</h1>
+<h4>@ViewData["Title"]</h4>
+<h5>You are going to delete this record. Are you sure? If YES, please click at Delete button below.</h5>
+<form method="post" class="w-75 mx-auto">
+    <div class="mb-3">
+        <label for="Id" class="form-label">Id:</label>
+        <input type="text" class="form-control" id="Id" asp-for="Id" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="StudentId" class="form-label">StudentId:</label>
+        <input type="text" class="form-control" id="StudentId" asp-for="StudentId" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="Firstname" class="form-label">Firstname:</label>
+        <input type="text" class="form-control" id="Firstname" asp-for="Firstname" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="Lastname" class="form-label">Lastname:</label>
+        <input type="text" class="form-control" id="Lastname" asp-for="Lastname" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="HeightCm" class="form-label">Height (Cm.):</label>
+        <input type="text" class="form-control" id="HeightCm" asp-for="HeightCm" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="WeightKg" class="form-label">Weight (Kg.):</label>
+        <input type="text" class="form-control" id="WeightKg" asp-for="WeightKg" readonly />
+    </div>
+    <div class="mb-3">
+        <input type="submit" class="btn btn-danger mx-auto d-inline" value="Delete" />
+        <input type="button" class="btn btn-primary mx-auto d-inline" value="Cancel" action="action"
+            onclick="window.location.href='../'" />
+    </div>
+</form>

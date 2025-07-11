@@ -1,0 +1,365 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\BodyCheckWebAPI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BodyCheckWebAPI.mlgnv9pme8.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250215051204_1b6c6ac8ba6125a4876eb4d514cf8032--bear-cubs-grizzly-bears.jpg",
+      "PackagePath": "staticwebassets\\images\\20250215051204_1b6c6ac8ba6125a4876eb4d514cf8032--bear-cubs-grizzly-bears.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250215070454_660330_Kayun_ขยัน_陈勤奋.jpg",
+      "PackagePath": "staticwebassets\\images\\20250215070454_660330_Kayun_ขยัน_陈勤奋.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250215070709_660330_Kayun_ขยัน_陈勤奋.jpg",
+      "PackagePath": "staticwebassets\\images\\20250215070709_660330_Kayun_ขยัน_陈勤奋.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250215073527_13895461_122187628226444_3362974946990630322_n.jpg",
+      "PackagePath": "staticwebassets\\images\\20250215073527_13895461_122187628226444_3362974946990630322_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250215073656_1b6c6ac8ba6125a4876eb4d514cf8032--bear-cubs-grizzly-bears.jpg",
+      "PackagePath": "staticwebassets\\images\\20250215073656_1b6c6ac8ba6125a4876eb4d514cf8032--bear-cubs-grizzly-bears.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250215074730_bulldog002.png",
+      "PackagePath": "staticwebassets\\images\\20250215074730_bulldog002.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250215075726_bulldog010.png",
+      "PackagePath": "staticwebassets\\images\\20250215075726_bulldog010.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250215100217_cat-with-fish-ai-03.jpeg",
+      "PackagePath": "staticwebassets\\images\\20250215100217_cat-with-fish-ai-03.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250215130405_dog-loves-cat.jpg",
+      "PackagePath": "staticwebassets\\images\\20250215130405_dog-loves-cat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250221124952_bulldog008.jpg",
+      "PackagePath": "staticwebassets\\images\\20250221124952_bulldog008.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250221151546_92464.jpg",
+      "PackagePath": "staticwebassets\\images\\20250221151546_92464.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250222082952_314490805_8528190140555117_1027505532071281620_n.jpg",
+      "PackagePath": "staticwebassets\\images\\20250222082952_314490805_8528190140555117_1027505532071281620_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250223143025_1b6c6ac8ba6125a4876eb4d514cf8032--bear-cubs-grizzly-bears.jpg",
+      "PackagePath": "staticwebassets\\images\\20250223143025_1b6c6ac8ba6125a4876eb4d514cf8032--bear-cubs-grizzly-bears.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250223143132_660330_Kayun_ขยัน_陈勤奋.jpg",
+      "PackagePath": "staticwebassets\\images\\20250223143132_660330_Kayun_ขยัน_陈勤奋.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250223190559_1b6c6ac8ba6125a4876eb4d514cf8032--bear-cubs-grizzly-bears.jpg",
+      "PackagePath": "staticwebassets\\images\\20250223190559_1b6c6ac8ba6125a4876eb4d514cf8032--bear-cubs-grizzly-bears.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250223190636_bridehold1.jpg",
+      "PackagePath": "staticwebassets\\images\\20250223190636_bridehold1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250225014706_13895461_122187628226444_3362974946990630322_n.jpg",
+      "PackagePath": "staticwebassets\\images\\20250225014706_13895461_122187628226444_3362974946990630322_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250225014838_bulldog010.png",
+      "PackagePath": "staticwebassets\\images\\20250225014838_bulldog010.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\20250225055203_bulldog000.png",
+      "PackagePath": "staticwebassets\\images\\20250225055203_bulldog000.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\images\\NoData.jpg",
+      "PackagePath": "staticwebassets\\images\\NoData.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\BodyCheckWebAPI\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BodyCheckWebAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BodyCheckWebAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.BodyCheckWebAPI.props",
+      "PackagePath": "build\\BodyCheckWebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.BodyCheckWebAPI.props",
+      "PackagePath": "buildMultiTargeting\\BodyCheckWebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.BodyCheckWebAPI.props",
+      "PackagePath": "buildTransitive\\BodyCheckWebAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

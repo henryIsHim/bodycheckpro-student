@@ -1,0 +1,40 @@
+@model BodyCheckMVCWebAPIClient.Models.BodyCheckViewModel
+@{
+    ViewData["Title"] = "Edit Body Check Record";
+}
+<h1>Edit</h1>
+<h4>@ViewData["Title"]</h4>
+<form enctype="multipart/form-data" method="post" asp-controller="BodyCheck" asp-action="Edit" class="w-75 mx-auto">
+    <div class="mb-3">
+        <label for="Id" class="form-label">Id:</label>
+        <input type="text" class="form-control" id="Id" asp-for="Id" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="StudentId" class="form-label">StudentId:</label>
+        <input type="text" class="form-control" id="StudentId" asp-for="StudentId" />
+    </div>
+    <div class="mb-3">
+        <label for="Firstname" class="form-label">Firstname:</label>
+        <input type="text" class="form-control" id="Firstname" asp-for="Firstname" />
+    </div>
+    <div class="mb-3">
+        <label for="Lastname" class="form-label">Lastname:</label>
+        <input type="text" class="form-control" id="Lastname" asp-for="Lastname" />
+    </div>
+    <div class="mb-3">
+        <label for="HeightCm" class="form-label">Height (Cm.):</label>
+        <input type="text" class="form-control" id="HeightCm" asp-for="HeightCm" />
+    </div>
+    <div class="mb-3">
+        <label for="WeightKg" class="form-label">Weight (Kg.):</label>
+        <input type="text" class="form-control" id="WeightKg" asp-for="WeightKg" />
+    </div>
+    <div class="mb-3">
+        <label>&nbsp;&nbsp;&nbsp;</label>
+        <div class="col-sm-9">
+            <input type="submit" class="btn btn-info mx-auto d-inline" value="Save" />
+            <input type="button" class="btn btn-primary mx-auto d-inline" value="Cancel" action="action"
+                onclick="window.location.href='../'" />
+        </div>
+    </div>
+</form>

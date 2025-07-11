@@ -1,0 +1,173 @@
+@model BodyCheckMVCWebAPIClient.Models.BodyCheckViewModel
+@{
+    ViewData["Title"] = "Add Body Check Record";
+}
+
+<!-- Page Header -->
+<div class="page-header">
+    <div class="d-md-flex justify-content-between align-items-center">
+        <div class="text-center text-md-start mb-3 mb-md-0">
+            <h1 class="page-title">➕ Add New Record</h1>
+            <p class="page-subtitle">Create a new body check record for a student</p>
+        </div>
+        <div class="d-none d-md-block">
+            <a asp-controller="BodyCheck" asp-action="Index" class="btn btn-modern btn-cancel">
+                <i class="fas fa-arrow-left"></i>
+                Back to List
+            </a>
+        </div>
+    </div>
+    <!-- Mobile button -->
+    <div class="d-md-none text-center mt-3">
+        <a asp-controller="BodyCheck" asp-action="Index" class="btn btn-modern btn-cancel px-4 py-2">
+            <i class="fas fa-arrow-left"></i>
+            Back to List
+        </a>
+    </div>
+</div>
+
+<!-- Form Card -->
+<div class="form-card">
+    <div class="form-header">
+        <h2><i class="fas fa-user-plus"></i> Student Information</h2>
+        <p>Fill in the details below to create a new body check record</p>
+    </div>
+    
+    <div class="form-body">
+        <form method="post" asp-controller="BodyCheck" asp-action="Create" novalidate>
+            <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+            
+            <!-- Personal Information Section -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="StudentId" class="form-label">
+                            <i class="fas fa-id-card text-primary"></i>
+                            Student ID
+                        </label>
+                        <div class="input-group-modern">
+                            <i class="input-icon fas fa-hashtag"></i>
+                            <input asp-for="StudentId" class="form-control form-control-modern" 
+                                   placeholder="Enter student ID (optional)" />
+                        </div>
+                        <span asp-validation-for="StudentId" class="field-validation-error"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Firstname" class="form-label">
+                            <i class="fas fa-user text-primary"></i>
+                            First Name <span class="text-danger">*</span>
+                        </label>
+                        <div class="input-group-modern">
+                            <i class="input-icon fas fa-user"></i>
+                            <input asp-for="Firstname" class="form-control form-control-modern" 
+                                   placeholder="Enter first name" required />
+                        </div>
+                        <span asp-validation-for="Firstname" class="field-validation-error"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Lastname" class="form-label">
+                            <i class="fas fa-user text-primary"></i>
+                            Last Name <span class="text-danger">*</span>
+                        </label>
+                        <div class="input-group-modern">
+                            <i class="input-icon fas fa-user"></i>
+                            <input asp-for="Lastname" class="form-control form-control-modern" 
+                                   placeholder="Enter last name" required />
+                        </div>
+                        <span asp-validation-for="Lastname" class="field-validation-error"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Physical Measurements Section -->
+            <h5 class="mt-4 mb-3"><i class="fas fa-ruler-combined text-primary"></i> Physical Measurements</h5>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="HeightCm" class="form-label">
+                            <i class="fas fa-ruler-vertical text-success"></i>
+                            Height (cm)
+                        </label>
+                        <div class="input-group-modern">
+                            <i class="input-icon fas fa-ruler-vertical"></i>
+                            <input asp-for="HeightCm" type="number" step="0.1" min="0" max="300" 
+                                   class="form-control form-control-modern" 
+                                   placeholder="Enter height in centimeters" />
+                        </div>
+                        <span asp-validation-for="HeightCm" class="field-validation-error"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="WeightKg" class="form-label">
+                            <i class="fas fa-weight text-info"></i>
+                            Weight (kg)
+                        </label>
+                        <div class="input-group-modern">
+                            <i class="input-icon fas fa-weight"></i>
+                            <input asp-for="WeightKg" type="number" step="0.1" min="0" max="500" 
+                                   class="form-control form-control-modern" 
+                                   placeholder="Enter weight in kilograms" />
+                        </div>
+                        <span asp-validation-for="WeightKg" class="field-validation-error"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Form Actions -->
+            <div class="form-actions">
+                <a asp-controller="BodyCheck" asp-action="Index" class="btn btn-modern btn-cancel">
+                    <i class="fas fa-times"></i>
+                    Cancel
+                </a>
+                <button type="submit" class="btn btn-modern btn-primary-modern">
+                    <i class="fas fa-save"></i>
+                    Create Record
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Real-time validation feedback
+        document.querySelectorAll('.form-control-modern').forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.checkValidity()) {
+                    this.classList.add('is-valid');
+                    this.classList.remove('is-invalid');
+                } else {
+                    this.classList.add('is-invalid');
+                    this.classList.remove('is-valid');
+                }
+            });
+        });
+        
+        // BMI Calculator (optional enhancement)
+        const heightInput = document.getElementById('HeightCm');
+        const weightInput = document.getElementById('WeightKg');
+        
+        function calculateBMI() {
+            const height = parseFloat(heightInput.value);
+            const weight = parseFloat(weightInput.value);
+            
+            if (height > 0 && weight > 0) {
+                const bmi = weight / ((height / 100) ** 2);
+                console.log('BMI:', bmi.toFixed(1));
+                // You can display BMI if needed
+            }
+        }
+        
+        heightInput?.addEventListener('input', calculateBMI);
+        weightInput?.addEventListener('input', calculateBMI);
+    </script>
+}
