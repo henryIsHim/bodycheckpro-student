@@ -12,7 +12,7 @@ builder.Services.AddDbContext<BodyCheckDbContext>(
 // Add HttpClient factory for better HTTP client management
 builder.Services.AddHttpClient("BodyCheckApi", client =>
 {
-    client.BaseAddress = new Uri("https://bodycheck-backend-production.up.railway.app/api/BodyCheck/");
+    client.BaseAddress = new Uri("https://bodycheckpro-student-webapi.up.railway.app/api/BodyCheck/");
     client.DefaultRequestHeaders.Add("Accept", "application/json");
 })
 .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
